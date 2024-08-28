@@ -1,0 +1,83 @@
+# Ignore build output and user-specific files
+bin/
+obj/
+out/
+.vscode/
+.vscode/*
+*.swp
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DS_Store
+
+# Ignore build results
+*.dll
+*.exe
+*.app
+*.log
+*.vspscc
+*.vssscc
+*.cache
+*.ilk
+*.pdb
+*.mdb
+*.pidb
+*.vsp
+*.tlog
+*.tlb
+*.tli
+*.tlh
+*.log
+*.vsix
+*.nupkg
+*.package
+_UpgradeReport_Files/
+UpgradeLog*.XML
+archive/*
+_UpgradeReport_Files/
+UpgradeLog*.htm
+serviceFabric.xml
+*.Publish.xml
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+!packages/build/
+!packages/repositories.config
+
+# Ignore WebAssembly artifacts
+wwwroot/
+node_modules/
+
+# Ignore Visual Studio Code settings
+.vscode/*
+
+# Ignore Rider IDE settings
+.idea/
+.idea/*
+
+# Ignore Resharper folders
+_ReSharper*
+*_ReSharper.Caches
+
+# Ignore JetBrains files
+*.dotCover
+*.dotTrace
+*.dotMemory
+*.dotSettings.*
+resharper.xml
+
+# Ignore coverage files
+coverage/*
+*.lcov
+*.coverage
+
+# Ignore SQLite local databases
+*.db
+*.db-journal
+
+# Ignore .NET Core tooling
+project.lock.json
+project.fragment.lock.json
+artifacts/
