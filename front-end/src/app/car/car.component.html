@@ -1,0 +1,19 @@
+<div class="text-center p-3">
+    <div class="d-flex justify-content-center align-items-center mb-3">
+        <app-car-icon [car]="car()"></app-car-icon>
+        <div class="car-select-container">
+            <select (change)="onChangeCar(filter.value)" #filter class="form-select">
+                <option value="1">Car 1</option>
+                <option value="2">Car 2</option>
+            </select>
+        </div>
+    </div>
+    <div class="speed-indicator">
+        <div [class]="{'text-danger': isSpeedHighlighted()}" class="rounded-circle p-4 speed-display">
+            {{ car().speed }} km/h
+        </div>
+        <p class="mt-2">Current speed</p>
+    </div>
+</div>
+<div [class]="{'bg-primary': car().carNum === 1, 'bg-warning': car().carNum === 2}" class="footer text-center py-4">
+</div>
